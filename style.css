@@ -1,0 +1,384 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #0d1117;
+    color: #eaeaea;
+}
+
+/* NAVBAR */
+nav {
+    width: 100%;
+    background: #161b22;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+nav .logo {
+    color: #58a6ff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/* HERO / HOME PAGE */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 80px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero-text span {
+    color: #58a6ff;
+}
+
+.hero-text p {
+    font-size: 28px;        /* bigger text */
+    font-weight: 500;       /* slightly bold */
+    text-align: center;     /* center the text */
+    margin-top: 10px;       /* small spacing below name */
+}
+
+
+.btn {
+    display: inline-block;
+    background: #58a6ff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 35px; 
+}
+
+.btn:hover {
+    background: #1f6feb;
+}
+
+.hero-img img {
+    width: 420px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 15px 40px rgba(88,166,255,0.25);
+}
+
+/* ABOUT PAGE PHOTO */
+.about-photo {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.about-photo img {
+    width: 420px;
+    height: 420px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 15px 40px rgba(88,166,255,0.25);
+}
+
+
+/* ABOUT PAGE */
+.about {
+    padding: 80px 80px;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-container img {
+    width: 320px;
+    border-radius: 10px;
+}
+
+.about-container p {
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* Blue bold text for names in paragraphs */
+.edu-text p strong {
+    color: #58a6ff;
+    font-weight: bold;
+}
+
+/* SKILLS PAGE */
+.skills {
+    padding: 80px 80px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.skill-card {
+    background: #161b22;
+    border-radius: 15px;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* CONTACT PAGE */
+.contact {
+    padding: 80px 80px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 15px;
+    color: #eaeaea;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    background: #58a6ff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+form button:hover {
+    background: #1f6feb;
+}
+.hero-text {
+    text-align: center;     /* center everything */
+}
+/* EDUCATION SECTIONS */
+.edu-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: #161b22;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+}
+
+.edu-section img {
+    width: 290px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.edu-text h3 {
+    font-size: 28px;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.edu-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .edu-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .edu-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+.edu-section {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.edu-section:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.edu-section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.edu-section:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* CO-CURRICULAR ACTIVITIES */
+.activities {
+    padding: 80px 80px;
+}
+
+.activities h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.activities-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.activity-card {
+    background: #161b22;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(88,166,255,0.4);
+}
+
+.activity-card img {
+    width: 105%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.activity-card h3 {
+    font-size: 24px;
+    color: #58a6ff;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .activities-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activity-card {
+        width: 90%;
+    }
+}
+/* Certificate inside activity card */
+.activity-card .certificate {
+    margin-top: 15px;
+}
+
+.activity-card .certificate img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(88,166,255,0.3);
+    display: block;
+    margin: 0 auto; /* center the certificate */
+}
+
+

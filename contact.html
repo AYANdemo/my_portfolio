@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact - MyPortfolio</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <nav>
+    <h2 class="logo">MyPortfolio</h2>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" style="color:#58a6ff;">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+</nav>
+
+<h2 class="contact-title">Contact Me</h2>
+
+<form id="contactForm" class="contact-form">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Your Email" required />
+  <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+
+<div class="confirmation" id="confirmationMsg">Message submitted! Thank you for contacting me.</div>
+
+<div class="contact-info-center">
+  <a href="https://www.instagram.com/webdevbyayan" target="_blank" rel="noopener noreferrer" class="social-link">
+    <img src="assests/insta.jpg" alt="Instagram" class="social-icon" />
+    <span>@webdevbyayan</span>
+  </a>
+
+  <a href="https://www.instagram.com/ayan_ejaz_1" target="_blank" rel="noopener noreferrer" class="social-link">
+    <img src="assests/insta.jpg" alt="Instagram" class="social-icon" />
+    <span>@ayan_ejaz_1</span>
+  </a>
+
+  <a href="https://wa.me/353872709308" target="_blank" rel="noopener noreferrer" class="social-link">
+    <img src="assests/wathsapp.jpg" alt="WhatsApp" class="social-icon" />
+    <span>+353 872709308</span>
+  </a>
+
+  <a href="mailto:ayanejaz18@gmail.com" class="social-link">
+    <img src="assests/email.jpg" alt="Email" class="social-icon" />
+    <span>ayanejaz18@gmail.com</span>
+  </a>
+</div>
+
+
+
+<script>
+  const form = document.getElementById("contactForm");
+  const confirmation = document.getElementById("confirmationMsg");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();  // Prevent actual form submission
+    confirmation.style.display = "block";
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
